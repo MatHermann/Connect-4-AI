@@ -1,0 +1,46 @@
+body > div{
+    display: inline-block;
+    width: max-content;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+}
+
+#pane{
+    box-sizing: border-box;
+    border: 2px solid black;
+    width: max-content;
+}
+
+#settings{
+    text-align: left;
+    margin-left: 15px;
+}
+
+#settings select{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border:1px solid #BEBEBE;
+    padding: 7px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+
+    margin-top: 5px;
+    width: 150px;
+}
+
+#settings button{
+    margin-top: 5px;
+    width: 150px;
+    padding: 7px;
+}
+
+#thinking{
+    display: none;
+}

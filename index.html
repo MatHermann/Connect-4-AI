@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Connect-4</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/script.js"></script>
+</head>
+<body onload="initAll()">
+    <div class="row">
+        <div id="pane"></div>
+        <div id="settings">
+
+            <label>Settings</label>
+
+            <br />
+
+            <select onchange="setGameMode(this.value)">
+                <option value="1">Player vs AI</option>
+                <option value="2">Player vs Player</option>
+            </select>
+
+            <br />
+
+            <select onchange="setDifficulty(this.value)">
+                <option value="1">Beginner</option>
+                <option value="2">Intermediate</option>
+                <option value="3">Professional</option>
+                <option value="4">Expert</option>
+            </select>
+
+            <br />
+
+            <button onclick="reset();">Reset</button>
+
+            <br /><br /><br /><br /><br />
+
+            <center id="thinking">
+                <img src="img/loading.gif" title="Please wait..." width="75" height="75">
+                <p>Please wait, <br> I'm thinking...</p>
+            </center>
+        </div>
+    </div>
+</body>
+</html>
